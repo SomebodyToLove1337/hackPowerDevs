@@ -26,7 +26,7 @@ This project was developed for the **Powerfull Dev Event** by Microsoft. The **T
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/YOUR-USERNAME/Training-Management-App.git
+   git clone https://github.com/SomebodyToLove1337/Training-Management-App.git
 2. Set up the Power Platform Environment.
 3. Deploy the PowerApps solution to Dataverse.
 4. Configure the Microsoft Teams Bot via Copilot Studio.
