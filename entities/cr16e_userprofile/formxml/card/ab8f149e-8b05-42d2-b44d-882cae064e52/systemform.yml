@@ -1,0 +1,159 @@
+systemform:
+  formid: '{ab8f149e-8b05-42d2-b44d-882cae064e52}'
+  IntroducedVersion: 1.0
+  FormPresentation: 1
+  FormActivationState: 1
+  form:
+    tabs:
+      tab:
+        '@name': general
+        '@verticallayout': true
+        '@id': '{281fbdb5-71fd-4200-8f19-f4377c4881fb}'
+        '@IsUserDefined': 0
+        labels:
+          label:
+            '@description': ''
+            '@languagecode': 1031
+        columns:
+          column:
+          - '@width': 25%
+            sections:
+              section:
+                '@name': ColorStrip
+                '@showlabel': false
+                '@showbar': false
+                '@columns': 1
+                '@IsUserDefined': 0
+                '@id': '{db65c603-518d-46c1-9ccf-813ce618e7e9}'
+                labels:
+                  label:
+                    '@description': ColorStrip
+                    '@languagecode': 1031
+          - '@width': 75%
+            sections:
+              section:
+              - '@name': CardHeader
+                '@showlabel': false
+                '@showbar': false
+                '@columns': 111
+                '@id': '{81713a80-ffd9-44a8-902f-605384223d3f}'
+                '@IsUserDefined': 0
+                labels:
+                  label:
+                    '@description': Kopfzeile
+                    '@languagecode': 1031
+                rows:
+                  row:
+                    cell:
+                    - '@id': '{23965e13-96d7-437a-be26-8d66c4601e70}'
+                      '@showlabel': true
+                      '@locklevel': 0
+                      labels:
+                        label:
+                          '@description': Statusgrund
+                          '@languagecode': 1031
+                      control:
+                        '@id': statuscode
+                        '@classid': '{5D68B988-0661-4db2-BC3E-17598AD3BE6C}'
+                        '@datafieldname': statuscode
+                        '@disabled': false
+                    - '@id': '{5fe659e8-d96d-45c3-80ad-89387e0af2a3}'
+                      '@showlabel': true
+                      '@locklevel': 0
+                      labels:
+                        label:
+                          '@description': ''
+                          '@languagecode': 1031
+                    - '@id': '{dae64b93-e5be-4f7c-9dfe-23f14a727965}'
+                      '@showlabel': true
+                      '@locklevel': 0
+                      labels:
+                        label:
+                          '@description': ''
+                          '@languagecode': 1031
+              - '@name': CardDetails
+                '@showlabel': false
+                '@showbar': false
+                '@columns': 1
+                '@id': '{033b9d91-372e-4d53-8761-6a49dcbde476}'
+                '@IsUserDefined': 0
+                labels:
+                  label:
+                    '@description': Details
+                    '@languagecode': 1031
+                rows:
+                  row:
+                    cell:
+                      '@id': '{378ad3ed-6e9f-4e2c-8a85-a665e187d921}'
+                      '@showlabel': true
+                      '@locklevel': 0
+                      labels:
+                        label:
+                          '@description': User Name
+                          '@languagecode': 1031
+                      control:
+                        '@id': cr16e_username
+                        '@classid': '{4273EDBD-AC1D-40d3-9FB2-095C621B552D}'
+                        '@datafieldname': cr16e_username
+                        '@disabled': false
+              - '@name': CardFooter
+                '@showlabel': false
+                '@columns': 1111
+                '@showbar': false
+                '@id': '{ad3cda4a-d0a7-4edf-9ca0-2af4a1365f63}'
+                '@IsUserDefined': 0
+                labels:
+                  label:
+                    '@description': Fußzeile
+                    '@languagecode': 1031
+                rows:
+                  row:
+                    cell:
+                    - '@id': '{c3605b5b-e905-4165-b5d2-ed23f8b085f4}'
+                      '@showlabel': true
+                      '@locklevel': 0
+                      labels:
+                        label:
+                          '@description': Besitzer
+                          '@languagecode': 1031
+                      control:
+                        '@id': ownerid
+                        '@classid': '{270BD3DB-D9AF-4782-9025-509E298DEC0A}'
+                        '@datafieldname': ownerid
+                        '@disabled': false
+                    - '@id': '{55532f92-cc14-4ab2-861f-362cabf330e0}'
+                      '@showlabel': true
+                      '@locklevel': 0
+                      labels:
+                        label:
+                          '@description': Erstellt am
+                          '@languagecode': 1031
+                      control:
+                        '@id': createdon
+                        '@classid': '{270BD3DB-D9AF-4782-9025-509E298DEC0A}'
+                        '@datafieldname': createdon
+                        '@disabled': false
+                    - '@id': '{abe560f8-f58f-4f38-a4e4-44780f52993c}'
+                      '@showlabel': true
+                      '@locklevel': 0
+                      labels:
+                        label:
+                          '@description': ''
+                          '@languagecode': 1031
+                    - '@id': '{070eb5be-062e-47f1-99ec-c7404fcdff74}'
+                      '@showlabel': true
+                      '@locklevel': 0
+                      labels:
+                        label:
+                          '@description': ''
+                          '@languagecode': 1031
+  IsCustomizable: 1
+  CanBeDeleted: 1
+  LocalizedNames:
+    LocalizedName:
+      '@description': Informationen
+      '@languagecode': 1031
+  Descriptions:
+    Description:
+      '@description': Ein Kartenformular für diese Entität.
+      '@languagecode': 1031

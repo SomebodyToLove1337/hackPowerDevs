@@ -1,0 +1,41 @@
+savedquery:
+  IsCustomizable: 1
+  CanBeDeleted: 0
+  isquickfindquery: 0
+  isprivate: 0
+  isdefault: 1
+  savedqueryid: '{5c5d074f-98cc-40b5-99d0-f9e74726cacd}'
+  layoutxml:
+    grid:
+      '@name': resultset
+      '@jump': cr16e_username
+      '@select': 1
+      '@icon': 1
+      '@preview': 1
+      row:
+        '@name': result
+        '@id': cr16e_userprofileid
+        cell:
+        - '@name': cr16e_username
+          '@width': 300
+        - '@name': createdon
+          '@width': 125
+  querytype: 1
+  fetchxml:
+    fetch:
+      '@version': 1.0
+      '@mapping': logical
+      entity:
+        '@name': cr16e_userprofile
+        attribute:
+        - '@name': cr16e_userprofileid
+        - '@name': cr16e_username
+        - '@name': createdon
+        order:
+          '@attribute': cr16e_username
+          '@descending': false
+  IntroducedVersion: 1.0
+  LocalizedNames:
+    LocalizedName:
+      '@description': User Profile Ansicht für die erweiterte Suche
+      '@languagecode': 1031
