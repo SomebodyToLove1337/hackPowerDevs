@@ -1,0 +1,12 @@
+{
+  "$kind": "BotConfiguration",
+  "gPTSettings": {
+    "$kind": "GPTSettings",
+    "defaultSchemaName": "cr16e_raiseTrainingBot.gpt.default"
+  },
+  "aISettings": {
+    "$kind": "AISettings",
+    "useModelKnowledge": true,
+    "isSemanticSearchEnabled": true
+  }
+}
