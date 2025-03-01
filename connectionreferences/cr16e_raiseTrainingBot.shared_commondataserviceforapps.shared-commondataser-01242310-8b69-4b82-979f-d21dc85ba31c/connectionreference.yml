@@ -1,0 +1,8 @@
+connectionreference:
+  '@connectionreferencelogicalname': cr16e_raiseTrainingBot.shared_commondataserviceforapps.shared-commondataser-01242310-8b69-4b82-979f-d21dc85ba31c
+  connectionreferencedisplayname: cr16e_raiseTrainingBot.shared_commondataserviceforapps.shared-commondataser-01242310-8b69-4b82-979f-d21dc85ba31c
+  connectorid: /providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps
+  iscustomizable: 0
+  promptingbehavior: 0
+  statecode: 0
+  statuscode: 1
