@@ -1,0 +1,23 @@
+RootComponents:
+  RootComponent:
+  - '@type': 1
+    '@schemaName': cr16e_booking
+    '@behavior': 0
+  - '@type': 1
+    '@schemaName': cr16e_course2
+    '@behavior': 0
+  - '@type': 1
+    '@schemaName': cr16e_userprofile
+    '@behavior': 0
+  - '@type': 29
+    '@id': '{791e61dc-11f6-ef11-be20-002248a42c4e}'
+    '@behavior': 0
+  - '@type': 80
+    '@schemaName': cr16e_hackTogetherManagerApp
+    '@behavior': 0
+  - '@type': 161
+    '@id': '{b75ad111-40f5-ef11-be20-7c1e523436e1}'
+    '@behavior': 0
+  - '@type': 300
+    '@schemaName': cr16e_hacktogethertrainingimprove_a7bdf
+    '@behavior': 0

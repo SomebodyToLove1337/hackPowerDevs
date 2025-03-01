@@ -1,0 +1,17 @@
+ImportExportXml:
+  '@version': 9.2.25014.158
+  '@SolutionPackageVersion': 9.2
+  '@languagecode': 1031
+  '@generatedBy': CrmLive
+  '@xmlns:xsi': http://www.w3.org/2001/XMLSchema-instance
+  SolutionManifest:
+    UniqueName: hackTogetherAiTrainingImprove
+    LocalizedNames:
+      LocalizedName:
+        '@description': hackTogetherAiTrainingImprove
+        '@languagecode': 1031
+    Descriptions: 
+    Version: 1.0.0.0
+    Managed: 0
+    Publisher:
+      UniqueName: MsHackTogether

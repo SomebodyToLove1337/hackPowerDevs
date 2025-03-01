@@ -1,0 +1,51 @@
+MissingDependencies:
+  MissingDependency:
+  - Required:
+      '@type': 1
+      '@schemaName': cr16e_course1
+      '@displayName': Course
+      '@solution': Active
+    Dependent:
+      '@type': 80
+      '@schemaName': cr16e_hackTogetherManagerApp
+      '@displayName': hackTogetherManagerApp
+  - Required:
+      '@type': 61
+      '@schemaName': msdyn_/Images/AppModule_Default_Icon.png
+      '@displayName': msdyn_/Images/AppModule_Default_Icon.png
+      '@solution': AppModuleWebResources (2.5)
+    Dependent:
+      '@type': 80
+      '@schemaName': cr16e_hackTogetherManagerApp
+      '@displayName': hackTogetherManagerApp
+  - Required:
+      '@type': 62
+      '@schemaName': cr16e_hackTogetherManagerApp
+      '@solution': Active
+    Dependent:
+      '@type': 80
+      '@schemaName': cr16e_hackTogetherManagerApp
+      '@displayName': hackTogetherManagerApp
+  - Required:
+      '@type': connectionreference
+      '@displayName': new_sharedoffice365_9d9a4
+      '@solution': Active
+      '@id.connectionreferencelogicalname': new_sharedoffice365_9d9a4
+    Dependent:
+      '@type': 29
+      '@displayName': Flow über Copilot ausführen
+      '@id': '{791e61dc-11f6-ef11-be20-002248a42c4e}'
+  - Required:
+      '@type': SettingDefinition
+      '@displayName': AppChannel
+      '@solution': msdyn_AppFrameworkInfraExtensions (1.0.0.12)
+      '@id.uniquename': AppChannel
+      package:
+        '@appName': PowerAppsAppFramework Package
+        '@version': 1.0.0.16
+        '#text': PowerAppsAppFramework_Anchor (1.0.0.16)
+    Dependent:
+      '@type': AppSetting
+      '@displayName': parentappmoduleid.uniquename=cr16e_hackTogetherManagerApp,settingdefinitionid.uniquename=AppChannel
+      '@id.parentappmoduleid.uniquename': cr16e_hackTogetherManagerApp
+      '@id.settingdefinitionid.uniquename': AppChannel
