@@ -1,0 +1,20 @@
+EntityRelationship:
+  '@Name': lk_cr16e_userprofile_createdby
+  EntityRelationshipType: OneToMany
+  IsCustomizable: 1
+  IntroducedVersion: 1.0
+  IsHierarchical: 0
+  ReferencingEntityName: cr16e_UserProfile
+  ReferencedEntityName: SystemUser
+  CascadeAssign: NoCascade
+  CascadeDelete: NoCascade
+  CascadeArchive: NoCascade
+  CascadeReparent: NoCascade
+  CascadeShare: NoCascade
+  CascadeUnshare: NoCascade
+  ReferencingAttributeName: CreatedBy
+  RelationshipDescription:
+    Descriptions:
+      Description:
+        '@description': Eindeutiger Bezeichner des Benutzers, der den Datensatz erstellt hat.
+        '@languagecode': 1031

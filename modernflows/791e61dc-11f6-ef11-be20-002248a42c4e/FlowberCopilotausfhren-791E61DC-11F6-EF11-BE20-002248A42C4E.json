@@ -1,0 +1,192 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps": {
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        },
+        "connection": {
+          "connectionReferenceLogicalName": "cr16e_raiseTrainingBot.shared_commondataserviceforapps.shared-commondataser-01242310-8b69-4b82-979f-d21dc85ba31c"
+        },
+        "runtimeSource": "embedded"
+      },
+      "shared_office365": {
+        "api": {
+          "name": "shared_office365"
+        },
+        "connection": {
+          "connectionReferenceLogicalName": "new_sharedoffice365_9d9a4"
+        },
+        "runtimeSource": "invoker"
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        },
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        }
+      },
+      "triggers": {
+        "manual": {
+          "type": "Request",
+          "kind": "Skills",
+          "inputs": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "description": "alice@example.com",
+                  "title": "Email",
+                  "type": "string",
+                  "x-ms-content-hint": "TEXT",
+                  "x-ms-dynamically-added": true
+                }
+              },
+              "required": [
+                "text"
+              ]
+            }
+          },
+          "metadata": {
+            "operationMetadataId": "b8f61c18-7224-4f8a-9c5f-72fbce5df764"
+          }
+        }
+      },
+      "actions": {
+        "Try_-_Get_Name_and_Interests_from__User_Profile": {
+          "type": "Scope",
+          "actions": {
+            "Zeilen_aus_der_ausgewählten_Umgebung_auflisten": {
+              "type": "OpenApiConnection",
+              "inputs": {
+                "parameters": {
+                  "organization": "https://org5ba466ac.crm4.dynamics.com",
+                  "entityName": "cr16e_userprofiles",
+                  "$select": "cr16e_username,cr16e_interests",
+                  "$filter": "cr16e_email eq '@{triggerBody()?['text']}'"
+                },
+                "host": {
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+                  "operationId": "ListRecordsWithOrganization",
+                  "connectionName": "shared_commondataserviceforapps"
+                }
+              }
+            },
+            "Verfassen_-_User_Name": {
+              "type": "Compose",
+              "inputs": "@outputs('Zeilen_aus_der_ausgewählten_Umgebung_auflisten')?['body/value']?[0]?['cr16e_username']",
+              "runAfter": {
+                "Zeilen_aus_der_ausgewählten_Umgebung_auflisten": [
+                  "Succeeded"
+                ]
+              }
+            },
+            "Select_-_Users_Interests": {
+              "type": "Select",
+              "inputs": {
+                "from": "@outputs('Zeilen_aus_der_ausgewählten_Umgebung_auflisten')?['body/value']",
+                "select": {
+                  "Interests": "@item()?['cr16e_interests@OData.Community.Display.V1.FormattedValue']"
+                }
+              },
+              "runAfter": {
+                "Verfassen_-_User_Name": [
+                  "Succeeded"
+                ]
+              }
+            },
+            "Verfassen_-_Get_Interests_Value_in_one_String": {
+              "type": "Compose",
+              "inputs": "@join(outputs('Select_-_Users_Interests')['body'],';')",
+              "runAfter": {
+                "Select_-_Users_Interests": [
+                  "SUCCEEDED"
+                ]
+              }
+            }
+          },
+          "runAfter": {}
+        },
+        "Catch_-_Error_Handling_(Send_Mail)": {
+          "type": "Scope",
+          "actions": {
+            "E-Mail_senden_(V2)": {
+              "type": "OpenApiConnection",
+              "inputs": {
+                "parameters": {
+                  "emailMessage/To": "AdminBS@xby1p.onmicrosoft.com",
+                  "emailMessage/Subject": "ERROR - Copilot Studio - Workflow",
+                  "emailMessage/Body": "<p class=\"editor-paragraph\">Error in Workflow</p>",
+                  "emailMessage/Importance": "High"
+                },
+                "host": {
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_office365",
+                  "operationId": "SendEmailV2",
+                  "connectionName": "shared_office365"
+                }
+              }
+            }
+          },
+          "runAfter": {
+            "Try_-_Get_Name_and_Interests_from__User_Profile": [
+              "TimedOut",
+              "Skipped",
+              "Failed"
+            ]
+          }
+        },
+        "Respond_to_Copilot": {
+          "type": "Response",
+          "kind": "Skills",
+          "inputs": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "title": "Name",
+                  "description": "Namen der Person welche Buchen möchte",
+                  "type": "string",
+                  "x-ms-content-hint": "TEXT",
+                  "x-ms-dynamically-added": true
+                },
+                "interests": {
+                  "title": "Interests",
+                  "description": "Hier werden die Interessen des Benutzt zurück gegeben, diese können verwendet werden um entsprechende Kurse zu finden",
+                  "type": "string",
+                  "x-ms-content-hint": "TEXT",
+                  "x-ms-dynamically-added": true
+                }
+              },
+              "additionalProperties": {}
+            },
+            "statusCode": 200,
+            "body": {
+              "name": "@{outputs('Verfassen_-_User_Name')}",
+              "interests": "@{outputs('Verfassen_-_Get_Interests_Value_in_one_String')}"
+            }
+          },
+          "runAfter": {
+            "Catch_-_Error_Handling_(Send_Mail)": [
+              "Skipped",
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "81c94f73-dd52-465c-ad3b-a4686da63cc3"
+          }
+        }
+      },
+      "outputs": {},
+      "description": "Run a flow from Copilot and send back a response."
+    },
+    "templateName": null
+  },
+  "schemaVersion": "1.0.0.0"
+}

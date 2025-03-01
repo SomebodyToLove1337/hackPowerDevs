@@ -1,0 +1,32 @@
+Workflow:
+  '@WorkflowId': '{791e61dc-11f6-ef11-be20-002248a42c4e}'
+  '@Name': Flow über Copilot ausführen
+  '@Description': Run a flow from Copilot and send back a response.
+  JsonFileName: /modernflows/791e61dc-11f6-ef11-be20-002248a42c4e/FlowberCopilotausfhren-791E61DC-11F6-EF11-BE20-002248A42C4E.json
+  Type: 1
+  Subprocess: 0
+  Category: 5
+  Mode: 0
+  Scope: 4
+  OnDemand: 0
+  TriggerOnCreate: 0
+  TriggerOnDelete: 0
+  AsyncAutodelete: 0
+  SyncWorkflowLogOnFailure: 0
+  StateCode: 1
+  StatusCode: 2
+  RunAs: 1
+  IsTransacted: 1
+  IntroducedVersion: 1.0.0.0
+  IsCustomizable: 1
+  BusinessProcessType: 0
+  IsCustomProcessingStepAllowedForOtherPublishers: 1
+  PrimaryEntity: none
+  LocalizedNames:
+    LocalizedName:
+      '@languagecode': 1031
+      '@description': Flow über Copilot ausführen
+  Descriptions:
+    Description:
+      '@languagecode': 1031
+      '@description': Run a flow from Copilot and send back a response.
