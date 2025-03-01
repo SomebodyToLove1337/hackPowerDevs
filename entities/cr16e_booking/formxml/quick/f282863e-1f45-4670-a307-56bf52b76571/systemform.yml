@@ -1,0 +1,56 @@
+systemform:
+  formid: '{f282863e-1f45-4670-a307-56bf52b76571}'
+  IntroducedVersion: 1.0
+  FormPresentation: 1
+  FormActivationState: 1
+  form:
+    tabs:
+      tab:
+        '@verticallayout': true
+        '@id': '{2179140b-0360-4adc-a08f-58dcd6501afd}'
+        '@IsUserDefined': 1
+        labels:
+          label:
+            '@description': ''
+            '@languagecode': 1031
+        columns:
+          column:
+            '@width': 100%
+            sections:
+              section:
+                '@showlabel': false
+                '@showbar': false
+                '@IsUserDefined': 0
+                '@id': '{8f75e41d-2c1e-49fb-9652-30abd4fa743c}'
+                labels:
+                  label:
+                    '@description': ALLGEMEIN
+                    '@languagecode': 1031
+                rows:
+                  row:
+                  - cell:
+                      '@id': '{dbf5a6ec-35e4-40b8-bbca-e29ffb8e733a}'
+                      labels:
+                        label:
+                          '@description': Booking
+                          '@languagecode': 1031
+                      control:
+                        '@id': cr16e_booking1
+                        '@classid': '{4273EDBD-AC1D-40d3-9FB2-095C621B552D}'
+                        '@datafieldname': cr16e_booking1
+                  - cell:
+                      '@id': '{3b3a076b-96d6-4429-8138-0ef89fef09bf}'
+                      labels:
+                        label:
+                          '@description': Besitzer
+                          '@languagecode': 1031
+                      control:
+                        '@id': ownerid
+                        '@classid': '{270BD3DB-D9AF-4782-9025-509E298DEC0A}'
+                        '@datafieldname': ownerid
+  IsCustomizable: 1
+  CanBeDeleted: 1
+  LocalizedNames:
+    LocalizedName:
+      '@description': Informationen
+      '@languagecode': 1031

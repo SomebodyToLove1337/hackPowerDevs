@@ -1,0 +1,90 @@
+systemform:
+  formid: '{d8daf097-5807-4312-9681-793c3113336c}'
+  IntroducedVersion: 1.0
+  FormPresentation: 1
+  FormActivationState: 1
+  form:
+    tabs:
+      tab:
+        '@verticallayout': true
+        '@id': '{c5370e17-6e89-46ae-8a81-7c5093c71c90}'
+        '@IsUserDefined': 1
+        labels:
+          label:
+            '@description': Allgemein
+            '@languagecode': 1031
+        columns:
+          column:
+            '@width': 100%
+            sections:
+              section:
+                '@showlabel': false
+                '@showbar': false
+                '@IsUserDefined': 0
+                '@id': '{744c634f-d69e-44df-8556-8822a3177943}'
+                labels:
+                  label:
+                    '@description': Allgemein
+                    '@languagecode': 1031
+                rows:
+                  row:
+                  - cell:
+                      '@id': '{9f092a08-5897-4a98-9a15-ce36d6ca8d3e}'
+                      labels:
+                        label:
+                          '@description': Booking
+                          '@languagecode': 1031
+                      control:
+                        '@id': cr16e_booking1
+                        '@classid': '{4273EDBD-AC1D-40d3-9FB2-095C621B552D}'
+                        '@datafieldname': cr16e_booking1
+                  - cell:
+                      '@id': '{8d944487-a197-427e-8000-569ce2ecf1f9}'
+                      labels:
+                        label:
+                          '@description': Besitzer
+                          '@languagecode': 1031
+                      control:
+                        '@id': ownerid
+                        '@classid': '{270BD3DB-D9AF-4782-9025-509E298DEC0A}'
+                        '@datafieldname': ownerid
+                  - cell:
+                      '@id': '{9753ff66-95b8-46bd-af3a-f5290cc07120}'
+                      labels:
+                        label:
+                          '@description': User Profile
+                          '@languagecode': 1031
+                      control:
+                        '@id': cr16e_userid
+                        '@classid': '{270bd3db-d9af-4782-9025-509e298dec0a}'
+                        '@datafieldname': cr16e_userid
+                  - cell:
+                      '@id': '{dcf2139f-04b7-4c49-99f0-57045d3fa051}'
+                      labels:
+                        label:
+                          '@description': Course
+                          '@languagecode': 1031
+                      control:
+                        '@id': cr16e_courseid
+                        '@classid': '{270bd3db-d9af-4782-9025-509e298dec0a}'
+                        '@datafieldname': cr16e_courseid
+                  - cell:
+                      '@id': '{a4621ff5-1b89-4b28-a976-b053d023a873}'
+                      labels:
+                        label:
+                          '@description': Booking Date
+                          '@languagecode': 1031
+                      control:
+                        '@id': cr16e_bookingdate
+                        '@classid': '{5b773807-9fb2-42db-97c3-7a91eff8adff}'
+                        '@datafieldname': cr16e_bookingdate
+  IsCustomizable: 1
+  CanBeDeleted: 1
+  LocalizedNames:
+    LocalizedName:
+      '@description': Informationen
+      '@languagecode': 1031
+  Descriptions:
+    Description:
+      '@description': Ein Formular für diese Entität.
+      '@languagecode': 1031

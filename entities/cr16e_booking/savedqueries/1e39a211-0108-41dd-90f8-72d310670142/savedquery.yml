@@ -1,0 +1,41 @@
+savedquery:
+  IsCustomizable: 1
+  CanBeDeleted: 0
+  isquickfindquery: 0
+  isprivate: 0
+  isdefault: 1
+  savedqueryid: '{1e39a211-0108-41dd-90f8-72d310670142}'
+  layoutxml:
+    grid:
+      '@name': resultset
+      '@jump': cr16e_booking1
+      '@select': 1
+      '@icon': 1
+      '@preview': 1
+      row:
+        '@name': result
+        '@id': cr16e_bookingid
+        cell:
+        - '@name': cr16e_booking1
+          '@width': 300
+        - '@name': createdon
+          '@width': 125
+  querytype: 1
+  fetchxml:
+    fetch:
+      '@version': 1.0
+      '@mapping': logical
+      entity:
+        '@name': cr16e_booking
+        attribute:
+        - '@name': cr16e_bookingid
+        - '@name': cr16e_booking1
+        - '@name': createdon
+        order:
+          '@attribute': cr16e_booking1
+          '@descending': false
+  IntroducedVersion: 1.0
+  LocalizedNames:
+    LocalizedName:
+      '@description': Booking Ansicht für die erweiterte Suche
+      '@languagecode': 1031

@@ -1,0 +1,159 @@
+systemform:
+  formid: '{8f9b06da-f485-4038-930c-7577812e5896}'
+  IntroducedVersion: 1.0
+  FormPresentation: 1
+  FormActivationState: 1
+  form:
+    tabs:
+      tab:
+        '@name': general
+        '@verticallayout': true
+        '@id': '{025136dd-2b9e-4026-b22f-08d6fec056c5}'
+        '@IsUserDefined': 0
+        labels:
+          label:
+            '@description': ''
+            '@languagecode': 1031
+        columns:
+          column:
+          - '@width': 25%
+            sections:
+              section:
+                '@name': ColorStrip
+                '@showlabel': false
+                '@showbar': false
+                '@columns': 1
+                '@IsUserDefined': 0
+                '@id': '{9b421ec5-f3de-449a-b1de-78a6b1f59d75}'
+                labels:
+                  label:
+                    '@description': ColorStrip
+                    '@languagecode': 1031
+          - '@width': 75%
+            sections:
+              section:
+              - '@name': CardHeader
+                '@showlabel': false
+                '@showbar': false
+                '@columns': 111
+                '@id': '{3f203a37-873e-4493-9625-9d2baebab9d3}'
+                '@IsUserDefined': 0
+                labels:
+                  label:
+                    '@description': Kopfzeile
+                    '@languagecode': 1031
+                rows:
+                  row:
+                    cell:
+                    - '@id': '{ceb0bc08-2941-412c-9716-2224522f29cf}'
+                      '@showlabel': true
+                      '@locklevel': 0
+                      labels:
+                        label:
+                          '@description': Statusgrund
+                          '@languagecode': 1031
+                      control:
+                        '@id': statuscode
+                        '@classid': '{5D68B988-0661-4db2-BC3E-17598AD3BE6C}'
+                        '@datafieldname': statuscode
+                        '@disabled': false
+                    - '@id': '{fb070adb-7b77-48a2-becb-33778513e693}'
+                      '@showlabel': true
+                      '@locklevel': 0
+                      labels:
+                        label:
+                          '@description': ''
+                          '@languagecode': 1031
+                    - '@id': '{045465cd-93fa-4605-b64a-3d4d19134b55}'
+                      '@showlabel': true
+                      '@locklevel': 0
+                      labels:
+                        label:
+                          '@description': ''
+                          '@languagecode': 1031
+              - '@name': CardDetails
+                '@showlabel': false
+                '@showbar': false
+                '@columns': 1
+                '@id': '{8324674c-36b8-43d4-9b18-f35eb4cba9bf}'
+                '@IsUserDefined': 0
+                labels:
+                  label:
+                    '@description': Details
+                    '@languagecode': 1031
+                rows:
+                  row:
+                    cell:
+                      '@id': '{23d07736-be50-4aa5-be3c-5a9769834de3}'
+                      '@showlabel': true
+                      '@locklevel': 0
+                      labels:
+                        label:
+                          '@description': Course Name
+                          '@languagecode': 1031
+                      control:
+                        '@id': cr16e_coursename
+                        '@classid': '{4273EDBD-AC1D-40d3-9FB2-095C621B552D}'
+                        '@datafieldname': cr16e_coursename
+                        '@disabled': false
+              - '@name': CardFooter
+                '@showlabel': false
+                '@columns': 1111
+                '@showbar': false
+                '@id': '{36adca01-3438-4601-9964-528455a15b4e}'
+                '@IsUserDefined': 0
+                labels:
+                  label:
+                    '@description': Fußzeile
+                    '@languagecode': 1031
+                rows:
+                  row:
+                    cell:
+                    - '@id': '{d47f23ce-b2ee-4007-9835-800cda2d0fde}'
+                      '@showlabel': true
+                      '@locklevel': 0
+                      labels:
+                        label:
+                          '@description': Besitzer
+                          '@languagecode': 1031
+                      control:
+                        '@id': ownerid
+                        '@classid': '{270BD3DB-D9AF-4782-9025-509E298DEC0A}'
+                        '@datafieldname': ownerid
+                        '@disabled': false
+                    - '@id': '{3f44b358-8bf9-43e1-969a-08e0df10a325}'
+                      '@showlabel': true
+                      '@locklevel': 0
+                      labels:
+                        label:
+                          '@description': Erstellt am
+                          '@languagecode': 1031
+                      control:
+                        '@id': createdon
+                        '@classid': '{270BD3DB-D9AF-4782-9025-509E298DEC0A}'
+                        '@datafieldname': createdon
+                        '@disabled': false
+                    - '@id': '{d2f73f91-b88c-48fe-8363-0be842796f53}'
+                      '@showlabel': true
+                      '@locklevel': 0
+                      labels:
+                        label:
+                          '@description': ''
+                          '@languagecode': 1031
+                    - '@id': '{f527c2a1-bbf1-4662-a8bf-0b772a2f8e2c}'
+                      '@showlabel': true
+                      '@locklevel': 0
+                      labels:
+                        label:
+                          '@description': ''
+                          '@languagecode': 1031
+  IsCustomizable: 1
+  CanBeDeleted: 1
+  LocalizedNames:
+    LocalizedName:
+      '@description': Informationen
+      '@languagecode': 1031
+  Descriptions:
+    Description:
+      '@description': Ein Kartenformular für diese Entität.
+      '@languagecode': 1031

@@ -1,0 +1,56 @@
+savedquery:
+  IsCustomizable: 1
+  CanBeDeleted: 0
+  isquickfindquery: 0
+  isprivate: 0
+  isdefault: 1
+  savedqueryid: '{89c40801-f81d-4210-b03e-e9f73160611a}'
+  layoutxml:
+    grid:
+      '@name': resultset
+      '@jump': cr16e_booking1
+      '@select': 1
+      '@icon': 1
+      '@preview': 1
+      row:
+        '@name': result
+        '@id': cr16e_bookingid
+        cell:
+        - '@name': cr16e_booking1
+          '@width': 300
+        - '@name': createdon
+          '@width': 125
+        - '@name': cr16e_userid
+          '@width': 150
+        - '@name': cr16e_courseid
+          '@width': 150
+        - '@name': cr16e_bookingdate
+          '@width': 150
+  querytype: 0
+  fetchxml:
+    fetch:
+      '@version': 1.0
+      '@mapping': logical
+      entity:
+        '@name': cr16e_booking
+        attribute:
+        - '@name': cr16e_bookingid
+        - '@name': cr16e_booking1
+        - '@name': createdon
+        - '@name': cr16e_userid
+        - '@name': cr16e_courseid
+        - '@name': cr16e_bookingdate
+        order:
+          '@attribute': cr16e_booking1
+          '@descending': false
+        filter:
+          '@type': and
+          condition:
+            '@attribute': statecode
+            '@operator': eq
+            '@value': 0
+  IntroducedVersion: 1.0
+  LocalizedNames:
+    LocalizedName:
+      '@description': Aktive Bookings
+      '@languagecode': 1031

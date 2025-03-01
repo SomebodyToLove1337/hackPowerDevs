@@ -1,0 +1,90 @@
+systemform:
+  formid: '{674a5b21-c417-4dfd-b00c-16127e797a43}'
+  IntroducedVersion: 1.0
+  FormPresentation: 1
+  FormActivationState: 1
+  form:
+    tabs:
+      tab:
+        '@verticallayout': true
+        '@id': '{ece95920-9b09-49e2-86d9-c7a45f47aafe}'
+        '@IsUserDefined': 1
+        labels:
+          label:
+            '@description': Allgemein
+            '@languagecode': 1031
+        columns:
+          column:
+            '@width': 100%
+            sections:
+              section:
+                '@showlabel': false
+                '@showbar': false
+                '@IsUserDefined': 0
+                '@id': '{4b8dd345-f801-4696-9f2c-31aa6e2553f5}'
+                labels:
+                  label:
+                    '@description': Allgemein
+                    '@languagecode': 1031
+                rows:
+                  row:
+                  - cell:
+                      '@id': '{4a2604a4-d1cd-4a71-a185-2397025fe8e0}'
+                      labels:
+                        label:
+                          '@description': Course Name
+                          '@languagecode': 1031
+                      control:
+                        '@id': cr16e_coursename
+                        '@classid': '{4273EDBD-AC1D-40d3-9FB2-095C621B552D}'
+                        '@datafieldname': cr16e_coursename
+                  - cell:
+                      '@id': '{120f4f99-1aca-428c-9eeb-f4c640033b44}'
+                      labels:
+                        label:
+                          '@description': Besitzer
+                          '@languagecode': 1031
+                      control:
+                        '@id': ownerid
+                        '@classid': '{270BD3DB-D9AF-4782-9025-509E298DEC0A}'
+                        '@datafieldname': ownerid
+                  - cell:
+                      '@id': '{1261c1f8-98f5-4d95-aa23-2cc137c4f6f5}'
+                      labels:
+                        label:
+                          '@description': Duration (Hours)
+                          '@languagecode': 1031
+                      control:
+                        '@id': cr16e_durationhours
+                        '@classid': '{c6d124ca-7eda-4a60-aea9-7fb8d318b68f}'
+                        '@datafieldname': cr16e_durationhours
+                  - cell:
+                      '@id': '{6e16b2e1-8545-470c-a8ee-0f6157651241}'
+                      labels:
+                        label:
+                          '@description': Price
+                          '@languagecode': 1031
+                      control:
+                        '@id': cr16e_price
+                        '@classid': '{533b9e00-756b-4312-95a0-dc888637ac78}'
+                        '@datafieldname': cr16e_price
+                  - cell:
+                      '@id': '{e69d77c3-e7aa-40ef-a484-8dddbb14d17a}'
+                      labels:
+                        label:
+                          '@description': Instructor
+                          '@languagecode': 1031
+                      control:
+                        '@id': cr16e_instructor
+                        '@classid': '{4273edbd-ac1d-40d3-9fb2-095c621b552d}'
+                        '@datafieldname': cr16e_instructor
+  IsCustomizable: 1
+  CanBeDeleted: 1
+  LocalizedNames:
+    LocalizedName:
+      '@description': Informationen
+      '@languagecode': 1031
+  Descriptions:
+    Description:
+      '@description': Ein Formular für diese Entität.
+      '@languagecode': 1031

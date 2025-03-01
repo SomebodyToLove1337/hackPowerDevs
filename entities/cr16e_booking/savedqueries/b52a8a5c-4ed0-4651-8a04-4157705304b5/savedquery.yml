@@ -1,0 +1,53 @@
+savedquery:
+  IsCustomizable: 1
+  CanBeDeleted: 0
+  isquickfindquery: 1
+  isprivate: 0
+  isdefault: 1
+  savedqueryid: '{b52a8a5c-4ed0-4651-8a04-4157705304b5}'
+  layoutxml:
+    grid:
+      '@name': resultset
+      '@jump': cr16e_booking1
+      '@select': 1
+      '@icon': 1
+      '@preview': 1
+      row:
+        '@name': result
+        '@id': cr16e_bookingid
+        cell:
+        - '@name': cr16e_booking1
+          '@width': 300
+        - '@name': createdon
+          '@width': 125
+  querytype: 4
+  fetchxml:
+    fetch:
+      '@version': 1.0
+      '@mapping': logical
+      entity:
+        '@name': cr16e_booking
+        attribute:
+        - '@name': cr16e_bookingid
+        - '@name': cr16e_booking1
+        - '@name': createdon
+        order:
+          '@attribute': cr16e_booking1
+          '@descending': false
+        filter:
+        - '@type': and
+          condition:
+            '@attribute': statecode
+            '@operator': eq
+            '@value': 0
+        - '@type': or
+          '@isquickfindfields': 1
+          condition:
+            '@attribute': cr16e_booking1
+            '@operator': like
+            '@value': '{0}'
+  IntroducedVersion: 1.0
+  LocalizedNames:
+    LocalizedName:
+      '@description': Schnellsuche für aktive Bookings
+      '@languagecode': 1031

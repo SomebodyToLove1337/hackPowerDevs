@@ -1,0 +1,41 @@
+savedquery:
+  IsCustomizable: 1
+  CanBeDeleted: 0
+  isquickfindquery: 0
+  isprivate: 0
+  isdefault: 1
+  savedqueryid: '{de38ae5a-3217-48bc-b189-3b4b73aebcb4}'
+  layoutxml:
+    grid:
+      '@name': resultset
+      '@jump': cr16e_coursename
+      '@select': 1
+      '@icon': 1
+      '@preview': 1
+      row:
+        '@name': result
+        '@id': cr16e_course2id
+        cell:
+        - '@name': cr16e_coursename
+          '@width': 300
+        - '@name': createdon
+          '@width': 125
+  querytype: 1
+  fetchxml:
+    fetch:
+      '@version': 1.0
+      '@mapping': logical
+      entity:
+        '@name': cr16e_course2
+        attribute:
+        - '@name': cr16e_course2id
+        - '@name': cr16e_coursename
+        - '@name': createdon
+        order:
+          '@attribute': cr16e_coursename
+          '@descending': false
+  IntroducedVersion: 1.0
+  LocalizedNames:
+    LocalizedName:
+      '@description': Course Ansicht für die erweiterte Suche
+      '@languagecode': 1031
