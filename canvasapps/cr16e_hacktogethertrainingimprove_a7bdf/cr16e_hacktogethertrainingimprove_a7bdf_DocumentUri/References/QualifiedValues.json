@@ -1,0 +1,25 @@
+{
+  "QualifiedValues": [
+    {
+      "Namespace": "User Profiles (Formulare)",
+      "Kind": "default.cds_cr16e_userprofile_forms",
+      "Values": {
+        "Informationen": "c5e713d7-f733-4999-9d6e-cfae3baac9d1"
+      }
+    },
+    {
+      "Namespace": "Courses (Formulare)",
+      "Kind": "default.cds_cr16e_course2_forms",
+      "Values": {
+        "Informationen": "8f9b06da-f485-4038-930c-7577812e5896"
+      }
+    },
+    {
+      "Namespace": "Bookings (Formulare)",
+      "Kind": "default.cds_cr16e_booking_forms",
+      "Values": {
+        "Informationen": "cd30383a-5d9b-4933-86bd-d08a4a307b0b"
+      }
+    }
+  ]
+}

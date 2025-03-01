@@ -1,0 +1,3 @@
+{
+  "AppFromDataMetaDataIdsToEntityNameMappings": "{\"%DataSourceName.AFD%\":\"Bookings\",\"%DataSourceValue.AFD%\":\"[@Bookings]\",\"%SortFieldName.AFD%\":\"\\\"cr16e_booking1\\\"\",\"%FilterFieldName.AFD%\":\"cr16e_booking1\",\"%PrimaryNameField.AFD%\":\"cr16e_booking1\",\"%PrimaryNameFieldDisplayName.AFD%\":\"'Booking (cr16e_booking1)'\",\"%SearchFieldName.AFD%\":\"cr16e_booking1\",\"%StartsWithFieldName.AFD%\":\"cr16e_booking1\",\"%DeleteConfirmFieldName.AFD%\":\"cr16e_booking1\",\"%SortDescending.AFD%\":\"SortDescending3\",\"%CopilotSinglePageScreen.ID%\":\"'Bildschirm Bookings'\",\"%BrowseContainer.ID%\":\"BrowseGallery3\",\"%DetailEditContainer.ID%\":\"EditForm3\"}"
+}
