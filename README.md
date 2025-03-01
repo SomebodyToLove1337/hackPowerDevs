@@ -42,3 +42,8 @@ This project is licensed under the MIT License.
 For any questions or collaboration opportunities, please reach out via GitHub Issues.
 
 🚀 Developed for the Powerfull Dev Event by Microsoft 🚀
+
+## Demo Video
+
+[![Watch the video](https://img.youtube.com/vi/nulsctRshhs/maxresdefault.jpg)](https://www.youtube.com/watch?v=nulsctRshhs)
+
