@@ -1,0 +1,9 @@
+botcomponent:
+  '@schemaname': cr16e_raiseTrainingBot.component.MicrosoftDataverse-DerausgewhltenUmgebungeineneueZeilehinzufgen
+  componenttype: 9
+  iscustomizable: 0
+  name: Neuen Kurs buchen
+  parentbotid:
+    schemaname: cr16e_raiseTrainingBot
+  statecode: 0
+  statuscode: 1

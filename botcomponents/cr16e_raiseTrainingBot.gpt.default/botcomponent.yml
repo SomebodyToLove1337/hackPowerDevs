@@ -1,0 +1,10 @@
+botcomponent:
+  '@schemaname': cr16e_raiseTrainingBot.gpt.default
+  componenttype: 15
+  description: Dies ist ein Bot welcher bei Weiterbildungen helfen kann. Er erfasst sowohl die Fähigkeiten und Interessen von Benutzern und schlägt ihnen Weiterbildungen vor. Außerdem erfasst er ihre aktuellen Interessen und speichert diese damit diese in einer Power App verwendet werden können
+  iscustomizable: 0
+  name: RaiseTrainingBot
+  parentbotid:
+    schemaname: cr16e_raiseTrainingBot
+  statecode: 0
+  statuscode: 1

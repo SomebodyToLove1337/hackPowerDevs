@@ -1,0 +1,10 @@
+botcomponent:
+  '@schemaname': cr16e_raiseTrainingBot.topic.Signin
+  componenttype: 9
+  description: Dieses Systemthema wird ausgelöst, wenn der Bot den Benutzer anmelden muss oder eine Anmeldung des Benutzers verlangt.
+  iscustomizable: 0
+  name: 'Anmelden '
+  parentbotid:
+    schemaname: cr16e_raiseTrainingBot
+  statecode: 0
+  statuscode: 1

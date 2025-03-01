@@ -1,0 +1,10 @@
+botcomponent:
+  '@schemaname': cr16e_raiseTrainingBot.topic.Goodbye
+  componenttype: 9
+  description: Dieses Thema wird ausgelöst, wenn der Benutzer die Unterhaltung beenden möchte. Standardmäßig wird die Unterhaltung nicht beendet. Wenn Sie die Unterhaltung beenden möchten, wenn sich der Benutzer verabschiedet, können Sie diesem Thema eine Aktion „Ende der Unterhaltung“ hinzufügen oder zum Systemthema „Ende der Unterhaltung“ umleiten.
+  iscustomizable: 0
+  name: Wiedersehen
+  parentbotid:
+    schemaname: cr16e_raiseTrainingBot
+  statecode: 0
+  statuscode: 1

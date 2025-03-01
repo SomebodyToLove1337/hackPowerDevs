@@ -1,0 +1,10 @@
+botcomponent:
+  '@schemaname': cr16e_raiseTrainingBot.topic.ConversationStart
+  componenttype: 9
+  description: Dieses Systemthema wird ausgelöst, wenn der Bot eine Aktivität empfängt, die den Beginn einer neuen Unterhaltung anzeigt. Wenn Sie nicht möchten, dass der Bot die Unterhaltung initiiert, deaktivieren Sie dieses Thema.
+  iscustomizable: 0
+  name: Start der Unterhaltung
+  parentbotid:
+    schemaname: cr16e_raiseTrainingBot
+  statecode: 0
+  statuscode: 1

@@ -1,0 +1,10 @@
+botcomponent:
+  '@schemaname': cr16e_raiseTrainingBot.topic.OnError
+  componenttype: 9
+  description: Dieses Systemthema wird ausgelöst, wenn der Bot auf einen Fehler stößt. Bei Verwendung des Test-Chatbereichs wird die vollständige Fehlerbeschreibung angezeigt.
+  iscustomizable: 0
+  name: Bei Fehler
+  parentbotid:
+    schemaname: cr16e_raiseTrainingBot
+  statecode: 0
+  statuscode: 1

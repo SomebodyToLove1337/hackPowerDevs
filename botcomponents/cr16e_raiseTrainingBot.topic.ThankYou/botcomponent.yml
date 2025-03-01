@@ -1,0 +1,10 @@
+botcomponent:
+  '@schemaname': cr16e_raiseTrainingBot.topic.ThankYou
+  componenttype: 9
+  description: Dieses Thema wird ausgelöst, wenn der Benutzer sich bedankt.
+  iscustomizable: 0
+  name: Vielen Dank
+  parentbotid:
+    schemaname: cr16e_raiseTrainingBot
+  statecode: 0
+  statuscode: 1

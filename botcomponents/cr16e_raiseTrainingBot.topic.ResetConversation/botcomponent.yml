@@ -1,0 +1,9 @@
+botcomponent:
+  '@schemaname': cr16e_raiseTrainingBot.topic.ResetConversation
+  componenttype: 9
+  iscustomizable: 0
+  name: Unterhaltung zurücksetzen
+  parentbotid:
+    schemaname: cr16e_raiseTrainingBot
+  statecode: 0
+  statuscode: 1

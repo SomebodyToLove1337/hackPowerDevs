@@ -1,0 +1,9 @@
+botcomponent:
+  '@schemaname': cr16e_raiseTrainingBot.topic.ErstelleneinerneuenBuchunginderDataverseTabelle
+  componenttype: 9
+  iscustomizable: 0
+  name: Erstellen einer neuen Buchung in der Dataverse Tabelle
+  parentbotid:
+    schemaname: cr16e_raiseTrainingBot
+  statecode: 0
+  statuscode: 1

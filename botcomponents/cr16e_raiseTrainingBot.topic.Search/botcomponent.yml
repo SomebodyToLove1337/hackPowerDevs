@@ -1,0 +1,10 @@
+botcomponent:
+  '@schemaname': cr16e_raiseTrainingBot.topic.Search
+  componenttype: 9
+  description: Create generative answers from knowledge sources.
+  iscustomizable: 0
+  name: Conversational boosting
+  parentbotid:
+    schemaname: cr16e_raiseTrainingBot
+  statecode: 0
+  statuscode: 1

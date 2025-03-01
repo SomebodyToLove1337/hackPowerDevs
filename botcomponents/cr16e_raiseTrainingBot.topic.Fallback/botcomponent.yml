@@ -1,0 +1,10 @@
+botcomponent:
+  '@schemaname': cr16e_raiseTrainingBot.topic.Fallback
+  componenttype: 9
+  description: Dieses Systemthema wird ausgelöst, wenn die Äußerung des Benutzers mit keinem vorhandenen Thema übereinstimmt.
+  iscustomizable: 0
+  name: Fallback
+  parentbotid:
+    schemaname: cr16e_raiseTrainingBot
+  statecode: 0
+  statuscode: 1

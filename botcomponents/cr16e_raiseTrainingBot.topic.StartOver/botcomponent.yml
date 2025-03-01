@@ -1,0 +1,9 @@
+botcomponent:
+  '@schemaname': cr16e_raiseTrainingBot.topic.StartOver
+  componenttype: 9
+  iscustomizable: 0
+  name: Von vorn beginnen
+  parentbotid:
+    schemaname: cr16e_raiseTrainingBot
+  statecode: 0
+  statuscode: 1

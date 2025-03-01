@@ -1,0 +1,10 @@
+botcomponent:
+  '@schemaname': cr16e_raiseTrainingBot.topic.Greeting
+  componenttype: 9
+  description: Dieses Thema wird ausgelöst, wenn der Benutzer den Bot begrüßt.
+  iscustomizable: 0
+  name: Gruß
+  parentbotid:
+    schemaname: cr16e_raiseTrainingBot
+  statecode: 0
+  statuscode: 1

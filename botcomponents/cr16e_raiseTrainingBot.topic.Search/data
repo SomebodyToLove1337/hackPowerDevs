@@ -1,0 +1,85 @@
+kind: AdaptiveDialog
+beginDialog:
+  kind: OnUnknownIntent
+  id: main
+  priority: -1
+  actions:
+    - kind: SearchAndSummarizeContent
+      id: search-content
+      variable: Topic.Answer
+      userInput: =System.Activity.Text
+      fileSearchDataSource:
+        searchFilesMode:
+          kind: DoNotSearchFiles
+
+      knowledgeSources:
+        kind: SearchSpecificKnowledgeSources
+        knowledgeSources:
+          - cr16e_raiseTrainingBot.topic.Course_ei_eFwH9mXYzImrcvdBpW
+          - cr16e_raiseTrainingBot.topic.Booking_pFrzRNoHratXWEqp_6TPX
+
+    - kind: ConditionGroup
+      id: 65YbmM
+      conditions:
+        - id: 2BBdLc
+          condition: =!IsBlank(Topic.Answer)
+          actions:
+            - kind: Question
+              id: NzfOoq
+              interruptionPolicy:
+                allowInterruption: true
+
+              variable: init:Topic.Var1
+              prompt: What would you like to do?
+              entity:
+                kind: EmbeddedEntity
+                definition:
+                  kind: ClosedListEntity
+                  items:
+                    - id: Book a course
+                      displayName: Book a course
+
+                    - id: Ask a Question
+                      displayName: Ask a Question
+
+            - kind: ConditionGroup
+              id: RGryxx
+              conditions:
+                - id: KuMgIF
+                  condition: =Topic.Var1 = 'cr16e_raiseTrainingBot.topic.Search.main.NzfOoq'.'Book a course'
+                  actions:
+                    - kind: BeginDialog
+                      id: jj7L2T
+                      input: {}
+                      dialog: cr16e_raiseTrainingBot.component.MicrosoftDataverse-DerausgewhltenUmgebungeineneueZeilehinzufgen
+                      output:
+                        binding:
+                          _cr16e_courseid_value: Topic._cr16e_courseid_value
+                          _cr16e_userid_value: Topic._cr16e_userid_value
+                          _createdby_value: Topic._createdby_value
+                          _createdonbehalfby_value: Topic._createdonbehalfby_value
+                          _modifiedby_value: Topic._modifiedby_value
+                          _modifiedonbehalfby_value: Topic._modifiedonbehalfby_value
+                          _ownerid_value: Topic._ownerid_value
+                          _owningbusinessunit_value: Topic._owningbusinessunit_value
+                          _owningteam_value: Topic._owningteam_value
+                          _owninguser_value: Topic._owninguser_value
+                          cr16e_booking1: Topic.cr16e_booking1
+                          cr16e_bookingdate: Topic.cr16e_bookingdate
+                          cr16e_bookingid: Topic.cr16e_bookingid
+                          createdon: Topic.createdon
+                          importsequencenumber: Topic.importsequencenumber
+                          modifiedon: Topic.modifiedon
+                          overriddencreatedon: Topic.overriddencreatedon
+                          statecode: Topic.statecode
+                          statuscode: Topic.statuscode
+                          timezoneruleversionnumber: Topic.timezoneruleversionnumber
+                          utcconversiontimezonecode: Topic.utcconversiontimezonecode
+                          versionnumber: Topic.versionnumber
+
+                - id: jivOmp
+                  condition: =Topic.Var1 = 'cr16e_raiseTrainingBot.topic.Search.main.NzfOoq'.'Ask a Question'
+
+            - kind: EndDialog
+              id: AlO4Ca
+              clearTopicQueue: true

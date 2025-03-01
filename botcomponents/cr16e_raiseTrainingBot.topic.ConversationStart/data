@@ -1,0 +1,12 @@
+kind: AdaptiveDialog
+beginDialog:
+  kind: OnConversationStart
+  id: main
+  actions:
+    - kind: SendActivity
+      id: sendMessage_M0LuhV
+      activity:
+        text:
+          - "Hallo, ich bin {System.Bot.Name}, ein virtueller Assistent. Nur damit Sie es wissen: Manchmal nutze ich KI, um Ihre Fragen zu beantworten. Wenn Sie bei der Erstellung eine Website bereitgestellt haben, fragen Sie mich danach! Versuchen Sie als Nächstes, mir etwas mehr Wissen zu vermitteln, indem Sie generative KI einrichten."
+        speak:
+          - Danke für den Anruf. Wie kann ich helfen?

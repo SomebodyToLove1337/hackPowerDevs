@@ -1,0 +1,15 @@
+botcomponent:
+  '@schemaname': cr16e_raiseTrainingBot.topic.Escalate
+  componenttype: 9
+  description: >-
+    Dieses Systemthema wird ausgelöst, wenn der Benutzer angibt, dass er mit einem menschlichen Agent sprechen möchte.
+
+    Sie können in den Bot-Einstellungen konfigurieren, wie der Bot mit Übergabeszenarien an menschliche Agents umgeht.
+
+    Falls Ihr Browser keine Eskalationen verarbeitet, sollte dieses Thema deaktiviert werden.
+  iscustomizable: 0
+  name: Eskalieren
+  parentbotid:
+    schemaname: cr16e_raiseTrainingBot
+  statecode: 0
+  statuscode: 1

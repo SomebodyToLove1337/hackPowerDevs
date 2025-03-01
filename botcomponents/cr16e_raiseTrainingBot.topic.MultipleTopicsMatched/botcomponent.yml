@@ -1,0 +1,10 @@
+botcomponent:
+  '@schemaname': cr16e_raiseTrainingBot.topic.MultipleTopicsMatched
+  componenttype: 9
+  description: Dieses Systemthema wird ausgelöst, wenn der Bot mehrere Themen mit der eingehenden Nachricht abgleicht und klären muss, welches Thema ausgelöst werden soll.
+  iscustomizable: 0
+  name: Mehrere passende Themen
+  parentbotid:
+    schemaname: cr16e_raiseTrainingBot
+  statecode: 0
+  statuscode: 1

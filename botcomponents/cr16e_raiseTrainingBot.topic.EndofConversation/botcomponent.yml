@@ -1,0 +1,13 @@
+botcomponent:
+  '@schemaname': cr16e_raiseTrainingBot.topic.EndofConversation
+  componenttype: 9
+  description: >-
+    Dieses Systemthema wird nur durch eine Umleitungsaktion ausgelöst
+
+    und führt den Benutzer durch die Bewertung seiner Unterhaltung mit dem Bot.
+  iscustomizable: 0
+  name: Ende der Unterhaltung
+  parentbotid:
+    schemaname: cr16e_raiseTrainingBot
+  statecode: 0
+  statuscode: 1

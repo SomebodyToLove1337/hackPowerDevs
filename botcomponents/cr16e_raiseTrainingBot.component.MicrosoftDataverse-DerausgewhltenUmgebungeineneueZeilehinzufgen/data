@@ -1,0 +1,495 @@
+kind: TaskDialog
+modelDisplayName: Buche einen neuen Kurs
+modelDescription: Diese Aktion soll verwendet werden wenn der Benutzer einen neuen Kurs für sich buchen möchte
+inputs:
+  - kind: ManualTaskInput
+    propertyName: organization
+    value: https://org5ba466ac.crm4.dynamics.com
+
+  - kind: ManualTaskInput
+    propertyName: entityName
+    value: cr16e_bookings
+
+  - kind: AutomaticTaskInput
+    propertyName: item.'cr16e_booking1'
+    description: Namen des Benutzers + Namen des ausgewählten Kurses + Ausgewähltes Datum
+
+  - kind: AutomaticTaskInput
+    propertyName: item.'cr16e_bookingdate'
+    description: Das gewünschte Datum wann der Kurs stattfindet
+
+  - kind: AutomaticTaskInput
+    propertyName: item.'cr16e_CourseID@odata.bind'
+    description: Name des gewählten Kurses
+
+  - kind: AutomaticTaskInput
+    propertyName: item.'cr16e_UserID@odata.bind'
+    description: Das entsprechende Benutzerprofil anhand des Namens ausfüllen
+
+outputs:
+  - propertyName: _cr16e_courseid_value
+    name: Course (Value)
+
+  - propertyName: _cr16e_courseid_value@Microsoft.Dynamics.CRM.lookuplogicalname
+    name: Course (Type)
+
+  - propertyName: _cr16e_userid_value
+    name: User Profile (Value)
+
+  - propertyName: _cr16e_userid_value@Microsoft.Dynamics.CRM.lookuplogicalname
+    name: User Profile (Type)
+
+  - propertyName: _createdby_value
+    name: Erstellt von (Value)
+    description: Eindeutiger Bezeichner des Benutzers, der den Datensatz erstellt hat.
+
+  - propertyName: _createdby_value@Microsoft.Dynamics.CRM.lookuplogicalname
+    name: Erstellt von (Type)
+    description: Eindeutiger Bezeichner des Benutzers, der den Datensatz erstellt hat.
+
+  - propertyName: _createdonbehalfby_value
+    name: Erstellt von (Stellvertreter) (Value)
+    description: Eindeutiger Bezeichner des stellvertretenden Benutzers, der den Datensatz erstellt hat.
+
+  - propertyName: _createdonbehalfby_value@Microsoft.Dynamics.CRM.lookuplogicalname
+    name: Erstellt von (Stellvertreter) (Type)
+    description: Eindeutiger Bezeichner des stellvertretenden Benutzers, der den Datensatz erstellt hat.
+
+  - propertyName: _modifiedby_value
+    name: Geändert von (Value)
+    description: Eindeutiger Bezeichner des Benutzers, der den Datensatz geändert hat.
+
+  - propertyName: _modifiedby_value@Microsoft.Dynamics.CRM.lookuplogicalname
+    name: Geändert von (Type)
+    description: Eindeutiger Bezeichner des Benutzers, der den Datensatz geändert hat.
+
+  - propertyName: _modifiedonbehalfby_value
+    name: Geändert von (Stellvertreter) (Value)
+    description: Eindeutiger Bezeichner des stellvertretenden Benutzers, der den Datensatz geändert hat.
+
+  - propertyName: _modifiedonbehalfby_value@Microsoft.Dynamics.CRM.lookuplogicalname
+    name: Geändert von (Stellvertreter) (Type)
+    description: Eindeutiger Bezeichner des stellvertretenden Benutzers, der den Datensatz geändert hat.
+
+  - propertyName: _ownerid_value
+    name: Besitzer (Value)
+    description: Besitzer-ID
+
+  - propertyName: _ownerid_value@Microsoft.Dynamics.CRM.lookuplogicalname
+    name: Besitzer (Type)
+    description: Besitzer-ID
+
+  - propertyName: _owningbusinessunit_value
+    name: Besitzer (Unternehmenseinheit) (Value)
+    description: Eindeutiger Bezeichner der für den Datensatz zuständigen Unternehmenseinheit.
+
+  - propertyName: _owningbusinessunit_value@Microsoft.Dynamics.CRM.lookuplogicalname
+    name: Besitzer (Unternehmenseinheit) (Type)
+    description: Eindeutiger Bezeichner der für den Datensatz zuständigen Unternehmenseinheit.
+
+  - propertyName: _owningteam_value
+    name: Besitzer (Team) (Value)
+    description: Eindeutiger Bezeichner des für den Datensatz zuständigen Teams.
+
+  - propertyName: _owningteam_value@Microsoft.Dynamics.CRM.lookuplogicalname
+    name: Besitzer (Team) (Type)
+    description: Eindeutiger Bezeichner des für den Datensatz zuständigen Teams.
+
+  - propertyName: _owninguser_value
+    name: Besitzer (Benutzer) (Value)
+    description: Eindeutiger Bezeichner des für den Datensatz zuständigen Benutzers.
+
+  - propertyName: _owninguser_value@Microsoft.Dynamics.CRM.lookuplogicalname
+    name: Besitzer (Benutzer) (Type)
+    description: Eindeutiger Bezeichner des für den Datensatz zuständigen Benutzers.
+
+  - propertyName: @odata.id
+    name: OData Id
+    description: OData row id
+
+  - propertyName: cr16e_booking1
+    name: Booking
+
+  - propertyName: cr16e_bookingdate
+    name: Booking Date
+
+  - propertyName: cr16e_bookingid
+    name: Booking
+    description: Eindeutiger Bezeichner der Entitätsinstanzen
+
+  - propertyName: createdon
+    name: Erstellt am
+    description: Datum und Uhrzeit der Datensatzerstellung.
+
+  - propertyName: importsequencenumber
+    name: Importsequenznummer
+    description: Sequenznummer des Imports, mit dem dieser Datensatz erstellt wurde.
+
+  - propertyName: modifiedon
+    name: Geändert am
+    description: Datum und Uhrzeit der Datensatzänderung.
+
+  - propertyName: overriddencreatedon
+    name: Datensatz erstellt am
+    description: Datum und Uhrzeit der Datensatzmigration.
+
+  - propertyName: statecode
+    name: Status
+    description: Status von Booking
+
+  - propertyName: statuscode
+    name: Statusgrund
+    description: Grund für den Status von Booking
+
+  - propertyName: timezoneruleversionnumber
+    name: Versionsnummer der Zeitzonenregel
+    description: Nur zur internen Verwendung.
+
+  - propertyName: utcconversiontimezonecode
+    name: Zeitzonencode für UTC-Konvertierung
+    description: Zeitzonencode, der bei der Datensatzerstellung verwendet wurde.
+
+  - propertyName: versionnumber
+    name: Versionsnummer
+    description: Versionsnummer
+
+action:
+  kind: InvokeConnectorTaskAction
+  connectionReference: cr16e_raiseTrainingBot.shared_commondataserviceforapps.shared-commondataser-01242310-8b69-4b82-979f-d21dc85ba31c
+  connectionProperties:
+    mode: Invoker
+    usageDescription: Diese Aktion soll verwendet werden wenn der Benutzer einen neuen Kurs für sich buchen möchte
+
+  operationId: CreateRecordWithOrganization
+  dynamicInputSchema:
+    properties:
+      entityName:
+        displayName: Table name
+        description: Choose a table
+        isRequired: true
+        order: 1
+        dynamicValuesConfig:
+          capability: List
+
+        type: String
+
+      item:
+        displayName: Row Item
+        description: Row to create
+        isRequired: true
+        order: 2
+        type:
+          kind: Record
+          properties:
+            cr16e_booking1:
+              displayName: Booking
+              isRequired: true
+              order: 1
+              type: String
+
+            cr16e_bookingdate:
+              displayName: Booking Date
+              isRequired: true
+              order: 3
+              type: DateTime
+
+            cr16e_bookingid:
+              displayName: Booking
+              description: Eindeutiger Bezeichner der Entitätsinstanzen
+              visibility: Advanced
+              order: 2
+              type: String
+
+            cr16e_CourseID@odata.bind:
+              displayName: Course (Courses)
+              isRequired: true
+              order: 4
+              type: String
+
+            cr16e_UserID@odata.bind:
+              displayName: User Profile (User Profiles)
+              isRequired: true
+              order: 8
+              type: String
+
+            importsequencenumber:
+              displayName: Importsequenznummer
+              description: Sequenznummer des Imports, mit dem dieser Datensatz erstellt wurde.
+              visibility: Advanced
+              order: 6
+              type: Number
+
+            overriddencreatedon:
+              displayName: Datensatz erstellt am
+              description: Datum und Uhrzeit der Datensatzmigration.
+              visibility: Advanced
+              order: 5
+              type: DateTime
+
+            ownerid@odata.bind:
+              displayName: Besitzer (Besitzer)
+              description: Besitzer-ID
+              visibility: Advanced
+              order: 0
+              type: String
+
+            statuscode:
+              displayName: Statusgrund
+              description: Grund für den Status von Booking
+              visibility: Advanced
+              order: 7
+              dynamicValuesConfig:
+                capability: List
+
+              type: Number
+
+            timezoneruleversionnumber:
+              displayName: Versionsnummer der Zeitzonenregel
+              description: Nur zur internen Verwendung.
+              visibility: Advanced
+              order: 9
+              type: Number
+
+            utcconversiontimezonecode:
+              displayName: Zeitzonencode für UTC-Konvertierung
+              description: Zeitzonencode, der bei der Datensatzerstellung verwendet wurde.
+              visibility: Advanced
+              order: 10
+              type: Number
+
+      organization:
+        displayName: Environment
+        description: Choose an environment
+        isRequired: true
+        order: 0
+        dynamicValuesConfig:
+          capability: List
+
+        type: String
+
+  dynamicOutputSchema:
+    kind: Record
+    properties:
+      _cr16e_courseid_value:
+        displayName: Course (Value)
+        order: 12
+        type: String
+
+      _cr16e_courseid_value@Microsoft.Dynamics.CRM.lookuplogicalname:
+        displayName: Course (Type)
+        order: 11
+        type: String
+
+      _cr16e_userid_value:
+        displayName: User Profile (Value)
+        order: 29
+        type: String
+
+      _cr16e_userid_value@Microsoft.Dynamics.CRM.lookuplogicalname:
+        displayName: User Profile (Type)
+        order: 28
+        type: String
+
+      _createdby_value:
+        displayName: Erstellt von (Value)
+        description: Eindeutiger Bezeichner des Benutzers, der den Datensatz erstellt hat.
+        visibility: Advanced
+        order: 18
+        type: String
+
+      _createdby_value@Microsoft.Dynamics.CRM.lookuplogicalname:
+        displayName: Erstellt von (Type)
+        description: Eindeutiger Bezeichner des Benutzers, der den Datensatz erstellt hat.
+        visibility: Advanced
+        order: 17
+        type: String
+
+      _createdonbehalfby_value:
+        displayName: Erstellt von (Stellvertreter) (Value)
+        description: Eindeutiger Bezeichner des stellvertretenden Benutzers, der den Datensatz erstellt hat.
+        visibility: Advanced
+        order: 16
+        type: String
+
+      _createdonbehalfby_value@Microsoft.Dynamics.CRM.lookuplogicalname:
+        displayName: Erstellt von (Stellvertreter) (Type)
+        description: Eindeutiger Bezeichner des stellvertretenden Benutzers, der den Datensatz erstellt hat.
+        visibility: Advanced
+        order: 15
+        type: String
+
+      _modifiedby_value:
+        displayName: Geändert von (Value)
+        description: Eindeutiger Bezeichner des Benutzers, der den Datensatz geändert hat.
+        visibility: Advanced
+        order: 23
+        type: String
+
+      _modifiedby_value@Microsoft.Dynamics.CRM.lookuplogicalname:
+        displayName: Geändert von (Type)
+        description: Eindeutiger Bezeichner des Benutzers, der den Datensatz geändert hat.
+        visibility: Advanced
+        order: 22
+        type: String
+
+      _modifiedonbehalfby_value:
+        displayName: Geändert von (Stellvertreter) (Value)
+        description: Eindeutiger Bezeichner des stellvertretenden Benutzers, der den Datensatz geändert hat.
+        visibility: Advanced
+        order: 21
+        type: String
+
+      _modifiedonbehalfby_value@Microsoft.Dynamics.CRM.lookuplogicalname:
+        displayName: Geändert von (Stellvertreter) (Type)
+        description: Eindeutiger Bezeichner des stellvertretenden Benutzers, der den Datensatz geändert hat.
+        visibility: Advanced
+        order: 20
+        type: String
+
+      _ownerid_value:
+        displayName: Besitzer (Value)
+        description: Besitzer-ID
+        visibility: Advanced
+        order: 7
+        type: String
+
+      _ownerid_value@Microsoft.Dynamics.CRM.lookuplogicalname:
+        displayName: Besitzer (Type)
+        description: Besitzer-ID
+        visibility: Advanced
+        order: 4
+        type: String
+
+      _owningbusinessunit_value:
+        displayName: Besitzer (Unternehmenseinheit) (Value)
+        description: Eindeutiger Bezeichner der für den Datensatz zuständigen Unternehmenseinheit.
+        order: 6
+        type: String
+
+      _owningbusinessunit_value@Microsoft.Dynamics.CRM.lookuplogicalname:
+        displayName: Besitzer (Unternehmenseinheit) (Type)
+        description: Eindeutiger Bezeichner der für den Datensatz zuständigen Unternehmenseinheit.
+        order: 5
+        type: String
+
+      _owningteam_value:
+        displayName: Besitzer (Team) (Value)
+        description: Eindeutiger Bezeichner des für den Datensatz zuständigen Teams.
+        visibility: Advanced
+        order: 3
+        type: String
+
+      _owningteam_value@Microsoft.Dynamics.CRM.lookuplogicalname:
+        displayName: Besitzer (Team) (Type)
+        description: Eindeutiger Bezeichner des für den Datensatz zuständigen Teams.
+        visibility: Advanced
+        order: 2
+        type: String
+
+      _owninguser_value:
+        displayName: Besitzer (Benutzer) (Value)
+        description: Eindeutiger Bezeichner des für den Datensatz zuständigen Benutzers.
+        visibility: Advanced
+        order: 1
+        type: String
+
+      _owninguser_value@Microsoft.Dynamics.CRM.lookuplogicalname:
+        displayName: Besitzer (Benutzer) (Type)
+        description: Eindeutiger Bezeichner des für den Datensatz zuständigen Benutzers.
+        visibility: Advanced
+        order: 0
+        type: String
+
+      @odata.id:
+        displayName: OData Id
+        description: OData row id
+        order: 25
+        type: String
+
+      cr16e_booking1:
+        displayName: Booking
+        order: 8
+        type: String
+
+      cr16e_bookingdate:
+        displayName: Booking Date
+        order: 10
+        type: DateTime
+
+      cr16e_bookingid:
+        displayName: Booking
+        description: Eindeutiger Bezeichner der Entitätsinstanzen
+        visibility: Advanced
+        order: 9
+        type: String
+
+      createdon:
+        displayName: Erstellt am
+        description: Datum und Uhrzeit der Datensatzerstellung.
+        visibility: Advanced
+        order: 14
+        type: DateTime
+
+      importsequencenumber:
+        displayName: Importsequenznummer
+        description: Sequenznummer des Imports, mit dem dieser Datensatz erstellt wurde.
+        visibility: Advanced
+        order: 24
+        type: Number
+
+      modifiedon:
+        displayName: Geändert am
+        description: Datum und Uhrzeit der Datensatzänderung.
+        visibility: Advanced
+        order: 19
+        type: DateTime
+
+      overriddencreatedon:
+        displayName: Datensatz erstellt am
+        description: Datum und Uhrzeit der Datensatzmigration.
+        visibility: Advanced
+        order: 13
+        type: DateTime
+
+      statecode:
+        displayName: Status
+        description: Status von Booking
+        visibility: Advanced
+        order: 26
+        dynamicValuesConfig:
+          capability: List
+
+        type: Number
+
+      statuscode:
+        displayName: Statusgrund
+        description: Grund für den Status von Booking
+        visibility: Advanced
+        order: 27
+        dynamicValuesConfig:
+          capability: List
+
+        type: Number
+
+      timezoneruleversionnumber:
+        displayName: Versionsnummer der Zeitzonenregel
+        description: Nur zur internen Verwendung.
+        visibility: Advanced
+        order: 31
+        type: Number
+
+      utcconversiontimezonecode:
+        displayName: Zeitzonencode für UTC-Konvertierung
+        description: Zeitzonencode, der bei der Datensatzerstellung verwendet wurde.
+        visibility: Advanced
+        order: 32
+        type: Number
+
+      versionnumber:
+        displayName: Versionsnummer
+        description: Versionsnummer
+        visibility: Advanced
+        order: 30
+        type: Number
+
+outputMode: Specific
